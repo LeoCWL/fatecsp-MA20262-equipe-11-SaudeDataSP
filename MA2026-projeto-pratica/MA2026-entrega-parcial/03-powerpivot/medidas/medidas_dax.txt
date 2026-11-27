@@ -1,0 +1,22 @@
+-- Medidas propostas. Criar uma a uma no Power Pivot; não é um script executável em lote no Excel.
+-- O separador de argumentos pode ser ponto e vírgula, conforme a instalação.
+
+Estabelecimentos Ativos := SUM(FatoMunicipal[CNES_Ativos])
+
+Estabelecimentos Cadastrados := SUM(FatoMunicipal[CNES_Cadastrados])
+
+Estabelecimentos Desativados := SUM(FatoMunicipal[CNES_Desativados])
+
+UBS na Fonte := SUM(FatoMunicipal[UBS_Fonte])
+
+UBS com CNES Ativo := SUM(FatoMunicipal[UBS_Ativas])
+
+UBS não Correspondentes ao CNES Ativo := [UBS na Fonte] - [UBS com CNES Ativo]
+
+Estabelecimentos com Registro de Leitos := COUNTROWS(FatoLeitos) + 0
+
+Leitos Existentes := SUM(FatoLeitos[Leitos_Existentes])
+
+Leitos SUS := SUM(FatoLeitos[Leitos_SUS])
+
+Proporção de Leitos SUS := DIVIDE([Leitos SUS], [Leitos Existentes])

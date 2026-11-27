@@ -1,0 +1,17 @@
+{
+  "fonte_cnes": 154927,
+  "fonte_ubs": 5844,
+  "fonte_leitos_todos_meses": 9255,
+  "municipios": 645,
+  "totais": {
+    "CNES_Cadastrados": 154927,
+    "CNES_Ativos": 116712,
+    "CNES_Desativados": 38215,
+    "UBS_Fonte": 5844,
+    "UBS_Ativas": 5334,
+    "Estab_Com_Leitos": 1032,
+    "Leitos_Existentes": 110713,
+    "Leitos_SUS": 62439
+  },
+  "validacao": "645 municipios comparados com agregacao independente; chaves unicas e leitos SUS <= existentes"
+}
