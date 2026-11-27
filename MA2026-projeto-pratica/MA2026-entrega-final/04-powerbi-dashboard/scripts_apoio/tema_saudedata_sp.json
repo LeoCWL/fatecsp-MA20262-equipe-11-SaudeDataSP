@@ -1,0 +1,38 @@
+{
+  "name": "SaudeDataSP_Theme",
+  "dataColors": [
+    "#0D7377",
+    "#14919B",
+    "#0F2942",
+    "#E07A5F",
+    "#3D405B",
+    "#81B29A",
+    "#F2CC8F",
+    "#577590"
+  ],
+  "background": "#F4F7FA",
+  "foreground": "#0F2942",
+  "tableAccent": "#0D7377",
+  "textClasses": {
+    "callout": {
+      "fontSize": 24,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0F2942"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0F2942"
+    },
+    "header": {
+      "fontSize": 11,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0F2942"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#475569"
+    }
+  }
+}

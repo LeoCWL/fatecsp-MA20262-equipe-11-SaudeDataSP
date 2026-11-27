@@ -1,0 +1,40 @@
+// ============================================================================
+// PROJETO: SaúdeData SP — Medidas DAX Completas (Tabela _Medidas)
+// DISCIPLINA: Microinformática Aplicada (ILP590) — Fatec São Paulo (2º/2026)
+// ============================================================================
+
+// --- Medidas Base da Proposta Técnica ---
+Estabelecimentos Ativos = SUM(FatoMunicipal[CNES_Ativos])
+
+Estabelecimentos Cadastrados = SUM(FatoMunicipal[CNES_Cadastrados])
+
+Estabelecimentos Desativados = SUM(FatoMunicipal[CNES_Desativados])
+
+UBS na Fonte = SUM(FatoMunicipal[UBS_Fonte])
+
+UBS com CNES Ativo = SUM(FatoMunicipal[UBS_Ativas])
+
+UBS não Correspondentes ao CNES Ativo = [UBS na Fonte] - [UBS com CNES Ativo]
+
+Estabelecimentos com Registro de Leitos = COUNTROWS(FatoLeitos) + 0
+
+Leitos Existentes = SUM(FatoLeitos[Leitos_Existentes])
+
+Leitos SUS = SUM(FatoLeitos[Leitos_SUS])
+
+Proporção de Leitos SUS = DIVIDE([Leitos SUS], [Leitos Existentes], 0)
+
+// --- Medidas Complementares de Auditoria e Participação ---
+Leitos Não SUS = [Leitos Existentes] - [Leitos SUS]
+
+Taxa de Estabelecimentos Ativos = DIVIDE([Estabelecimentos Ativos], [Estabelecimentos Cadastrados], 0)
+
+Taxa de Compatibilidade UBS = DIVIDE([UBS com CNES Ativo], [UBS na Fonte], 0)
+
+Total de Municípios = DISTINCTCOUNT(DimMunicipio[IBGE6])
+
+Municípios com Leitos Registrados = DISTINCTCOUNT(FatoLeitos[IBGE6])
+
+Municípios sem Registro de Leitos = [Total de Municípios] - [Municípios com Leitos Registrados]
+
+Participação Leitos SUS no Estado = DIVIDE([Leitos SUS], CALCULATE([Leitos SUS], ALL(DimMunicipio)), 0)

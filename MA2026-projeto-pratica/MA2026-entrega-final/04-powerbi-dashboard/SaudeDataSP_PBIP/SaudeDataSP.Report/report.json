@@ -1,0 +1,391 @@
+{
+  "id": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "name": "SharedResources",
+        "type": 2,
+        "items": [
+          {
+            "type": 202,
+            "path": "BaseThemes/CY24SU06.json",
+            "name": "CY24SU06"
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": 0,
+      "name": "ReportSectionVisaoGeral",
+      "displayName": "1. Visão Geral Estadual",
+      "filters": "[]",
+      "ordinal": 0,
+      "visualContainers": [
+        {
+          "x": 16,
+          "y": 12,
+          "z": 0,
+          "width": 820,
+          "height": 66,
+          "config": "{\"name\": \"p1_header\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 820, \"height\": 66, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"SaúdeData SP — Infraestrutura de Saúde nos Municípios Paulistas\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"16pt\", \"color\": \"#FFFFFF\"}}]}, {\"textRuns\": [{\"value\": \"CNES e UBS: retrato 07/11/2026 | Leitos hospitalares: competência 202609 | Recorte: 645 municípios (SP)\", \"textStyle\": {\"fontSize\": \"9.5pt\", \"color\": \"#CBD5E1\"}}]}]}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 0
+        },
+        {
+          "x": 848,
+          "y": 12,
+          "z": 1,
+          "width": 200,
+          "height": 66,
+          "config": "{\"name\": \"p1_slicer_regiao\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 848, \"y\": 12, \"z\": 1, \"width\": 200, \"height\": 66, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimMunicipio.Regiao_Comparativa\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"DimMunicipio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Regiao_Comparativa\"}, \"Name\": \"DimMunicipio.Regiao_Comparativa\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Recorte Territorial'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 1
+        },
+        {
+          "x": 1058,
+          "y": 12,
+          "z": 2,
+          "width": 206,
+          "height": 66,
+          "config": "{\"name\": \"p1_slicer_mun\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1058, \"y\": 12, \"z\": 2, \"width\": 206, \"height\": 66, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimMunicipio.Municipio\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"DimMunicipio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Município'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 2
+        },
+        {
+          "x": 16,
+          "y": 90,
+          "z": 3,
+          "width": 200,
+          "height": 96,
+          "config": "{\"name\": \"p1_card_1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 90, \"z\": 3, \"width\": 200, \"height\": 96, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Estabelecimentos Ativos\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos Ativos\"}, \"Name\": \"_Medidas.Estabelecimentos Ativos\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Estabelecimentos Ativos'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 3
+        },
+        {
+          "x": 226,
+          "y": 90,
+          "z": 4,
+          "width": 200,
+          "height": 96,
+          "config": "{\"name\": \"p1_card_2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 226, \"y\": 90, \"z\": 4, \"width\": 200, \"height\": 96, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.UBS com CNES Ativo\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"UBS com CNES Ativo\"}, \"Name\": \"_Medidas.UBS com CNES Ativo\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'UBS com CNES Ativo'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 4
+        },
+        {
+          "x": 436,
+          "y": 90,
+          "z": 5,
+          "width": 200,
+          "height": 96,
+          "config": "{\"name\": \"p1_card_3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 436, \"y\": 90, \"z\": 5, \"width\": 200, \"height\": 96, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Estabelecimentos com Registro de Leitos\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos com Registro de Leitos\"}, \"Name\": \"_Medidas.Estabelecimentos com Registro de Leitos\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Estab. com Leitos'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 5
+        },
+        {
+          "x": 646,
+          "y": 90,
+          "z": 6,
+          "width": 200,
+          "height": 96,
+          "config": "{\"name\": \"p1_card_4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 646, \"y\": 90, \"z\": 6, \"width\": 200, \"height\": 96, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Leitos Existentes\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos Existentes'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 6
+        },
+        {
+          "x": 856,
+          "y": 90,
+          "z": 7,
+          "width": 200,
+          "height": 96,
+          "config": "{\"name\": \"p1_card_5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 856, \"y\": 90, \"z\": 7, \"width\": 200, \"height\": 96, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos SUS'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 7
+        },
+        {
+          "x": 1066,
+          "y": 90,
+          "z": 8,
+          "width": 198,
+          "height": 96,
+          "config": "{\"name\": \"p1_card_6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1066, \"y\": 90, \"z\": 8, \"width\": 198, \"height\": 96, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Proporção de Leitos SUS\"}, \"Name\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Proporção Leitos SUS'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 8
+        },
+        {
+          "x": 16,
+          "y": 200,
+          "z": 9,
+          "width": 440,
+          "height": 504,
+          "config": "{\"name\": \"p1_chart_leitos_top10\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 200, \"z\": 9, \"width\": 440, \"height\": 504, \"tabOrder\": 9}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"DimMunicipio.Municipio\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Medidas.Leitos Existentes\"}, {\"queryRef\": \"_Medidas.Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"DimMunicipio\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Top 10 Municípios — Leitos Existentes vs. Leitos SUS'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[{\"name\": \"TopN_p1_chart_leitos_top10\", \"expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"DimMunicipio\"}}, \"Property\": \"Municipio\"}}, \"type\": \"TopN\", \"filter\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"DimMunicipio\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Where\": [{\"Condition\": {\"Top\": {\"Count\": 10, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Municipio\"}}, \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}}}]}}}]}}]",
+          "tabOrder": 9
+        },
+        {
+          "x": 468,
+          "y": 200,
+          "z": 10,
+          "width": 410,
+          "height": 504,
+          "config": "{\"name\": \"p1_chart_cnes_top10\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 468, \"y\": 200, \"z\": 10, \"width\": 410, \"height\": 504, \"tabOrder\": 10}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"DimMunicipio.Municipio\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Medidas.Estabelecimentos Ativos\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"DimMunicipio\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos Ativos\"}, \"Name\": \"_Medidas.Estabelecimentos Ativos\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos Ativos\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Top 10 Municípios — Estabelecimentos Ativos (CNES)'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[{\"name\": \"TopN_p1_chart_cnes_top10\", \"expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"DimMunicipio\"}}, \"Property\": \"Municipio\"}}, \"type\": \"TopN\", \"filter\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"DimMunicipio\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Where\": [{\"Condition\": {\"Top\": {\"Count\": 10, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Municipio\"}}, \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos Ativos\"}}}]}}}]}}]",
+          "tabOrder": 10
+        },
+        {
+          "x": 890,
+          "y": 200,
+          "z": 11,
+          "width": 374,
+          "height": 246,
+          "config": "{\"name\": \"p1_chart_natureza_donut\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 890, \"y\": 200, \"z\": 11, \"width\": 374, \"height\": 246, \"tabOrder\": 11}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FatoLeitos.Natureza\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Medidas.Leitos Existentes\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"FatoLeitos\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Natureza\"}, \"Name\": \"FatoLeitos.Natureza\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos Existentes por Natureza Jurídica'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 11
+        },
+        {
+          "x": 890,
+          "y": 458,
+          "z": 12,
+          "width": 374,
+          "height": 246,
+          "config": "{\"name\": \"p1_chart_natureza_sus\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 890, \"y\": 458, \"z\": 12, \"width\": 374, \"height\": 246, \"tabOrder\": 12}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FatoLeitos.Natureza\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Medidas.Leitos Existentes\"}, {\"queryRef\": \"_Medidas.Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"FatoLeitos\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Natureza\"}, \"Name\": \"FatoLeitos.Natureza\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos Existentes vs. SUS por Natureza'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 12
+        }
+      ],
+      "config": "{\"relationships\":[]}",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": 1,
+      "name": "ReportSectionRedeHospitalar",
+      "displayName": "2. Rede Hospitalar e Leitos SUS",
+      "filters": "[]",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "x": 16,
+          "y": 12,
+          "z": 0,
+          "width": 620,
+          "height": 66,
+          "config": "{\"name\": \"p2_header\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 620, \"height\": 66, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"SaúdeData SP — Rede Hospitalar e Leitos SUS (Setembro/2026)\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"16pt\", \"color\": \"#FFFFFF\"}}]}, {\"textRuns\": [{\"value\": \"Competência 202609 | 1.032 estabelecimentos com registro de leitos em 351 municípios\", \"textStyle\": {\"fontSize\": \"9.5pt\", \"color\": \"#CBD5E1\"}}]}]}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 0
+        },
+        {
+          "x": 648,
+          "y": 12,
+          "z": 1,
+          "width": 200,
+          "height": 66,
+          "config": "{\"name\": \"p2_slicer_mun\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648, \"y\": 12, \"z\": 1, \"width\": 200, \"height\": 66, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimMunicipio.Municipio\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"DimMunicipio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Município'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 1
+        },
+        {
+          "x": 858,
+          "y": 12,
+          "z": 2,
+          "width": 200,
+          "height": 66,
+          "config": "{\"name\": \"p2_slicer_nat\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 858, \"y\": 12, \"z\": 2, \"width\": 200, \"height\": 66, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FatoLeitos.Natureza\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FatoLeitos\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Natureza\"}, \"Name\": \"FatoLeitos.Natureza\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Natureza Jurídica'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 2
+        },
+        {
+          "x": 1068,
+          "y": 12,
+          "z": 3,
+          "width": 196,
+          "height": 66,
+          "config": "{\"name\": \"p2_slicer_tipo\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1068, \"y\": 12, \"z\": 3, \"width\": 196, \"height\": 66, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FatoLeitos.Tipo\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FatoLeitos\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Tipo\"}, \"Name\": \"FatoLeitos.Tipo\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tipo de Estabelecimento'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 3
+        },
+        {
+          "x": 16,
+          "y": 90,
+          "z": 4,
+          "width": 302,
+          "height": 92,
+          "config": "{\"name\": \"p2_card_1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 90, \"z\": 4, \"width\": 302, \"height\": 92, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Estabelecimentos com Registro de Leitos\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos com Registro de Leitos\"}, \"Name\": \"_Medidas.Estabelecimentos com Registro de Leitos\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Estabelecimentos com Leitos'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 4
+        },
+        {
+          "x": 330,
+          "y": 90,
+          "z": 5,
+          "width": 302,
+          "height": 92,
+          "config": "{\"name\": \"p2_card_2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 330, \"y\": 90, \"z\": 5, \"width\": 302, \"height\": 92, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Leitos Existentes\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos Existentes (202609)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 5
+        },
+        {
+          "x": 644,
+          "y": 90,
+          "z": 6,
+          "width": 302,
+          "height": 92,
+          "config": "{\"name\": \"p2_card_3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 644, \"y\": 90, \"z\": 6, \"width\": 302, \"height\": 92, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos SUS (202609)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 6
+        },
+        {
+          "x": 958,
+          "y": 90,
+          "z": 7,
+          "width": 306,
+          "height": 92,
+          "config": "{\"name\": \"p2_card_4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 958, \"y\": 90, \"z\": 7, \"width\": 306, \"height\": 92, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Proporção de Leitos SUS\"}, \"Name\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Proporção Leitos SUS'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 7
+        },
+        {
+          "x": 16,
+          "y": 194,
+          "z": 8,
+          "width": 520,
+          "height": 230,
+          "config": "{\"name\": \"p2_chart_tipo\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 194, \"z\": 8, \"width\": 520, \"height\": 230, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FatoLeitos.Tipo\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Medidas.Leitos Existentes\"}, {\"queryRef\": \"_Medidas.Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"FatoLeitos\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Tipo\"}, \"Name\": \"FatoLeitos.Tipo\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Leitos Existentes\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Leitos Existentes e SUS por Tipo de Estabelecimento'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 8
+        },
+        {
+          "x": 548,
+          "y": 194,
+          "z": 9,
+          "width": 716,
+          "height": 510,
+          "config": "{\"name\": \"p2_table_estab\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 548, \"y\": 194, \"z\": 9, \"width\": 716, \"height\": 510, \"tabOrder\": 9}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"FatoLeitos.CNES\"}, {\"queryRef\": \"FatoLeitos.Estabelecimento\"}, {\"queryRef\": \"DimMunicipio.Municipio\"}, {\"queryRef\": \"FatoLeitos.Tipo\"}, {\"queryRef\": \"FatoLeitos.Natureza\"}, {\"queryRef\": \"_Medidas.Leitos Existentes\"}, {\"queryRef\": \"_Medidas.Leitos SUS\"}, {\"queryRef\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"e0\", \"Entity\": \"FatoLeitos\", \"Type\": 0}, {\"Name\": \"e1\", \"Entity\": \"DimMunicipio\", \"Type\": 0}, {\"Name\": \"e2\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e0\"}}, \"Property\": \"CNES\"}, \"Name\": \"FatoLeitos.CNES\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e0\"}}, \"Property\": \"Estabelecimento\"}, \"Name\": \"FatoLeitos.Estabelecimento\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e0\"}}, \"Property\": \"Tipo\"}, \"Name\": \"FatoLeitos.Tipo\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e0\"}}, \"Property\": \"Natureza\"}, \"Name\": \"FatoLeitos.Natureza\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e2\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e2\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e2\"}}, \"Property\": \"Proporção de Leitos SUS\"}, \"Name\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Detalhamento dos Estabelecimentos Hospitalares (Competência 202609)'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 9
+        },
+        {
+          "x": 16,
+          "y": 436,
+          "z": 10,
+          "width": 520,
+          "height": 268,
+          "config": "{\"name\": \"p2_nota\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 436, \"z\": 10, \"width\": 520, \"height\": 268, \"tabOrder\": 10}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Notas Metodológicas e Interpretação\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"16pt\", \"color\": \"#0F2942\"}}]}, {\"textRuns\": [{\"value\": \"1. A Proporção de Leitos SUS = Leitos SUS / Leitos Existentes indica a parcela destinada ao atendimento público, não representando taxa de ocupação hospitalar.\\n2. Hospitais Filantrópicos (Santas Casas e hospitais universitários) respondem por 51,97% de todos os leitos SUS do Estado de SP (32.451 leitos), seguidos pelos Hospitais Públicos (46,51%).\\n3. Ausência de registro na competência 202609 para 294 municípios reflete a regionalização da rede hospitalar paulista.\", \"textStyle\": {\"fontSize\": \"9.5pt\", \"color\": \"#334155\"}}]}]}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 10
+        }
+      ],
+      "config": "{\"relationships\":[]}",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": 2,
+      "name": "ReportSectionAuditoriaMunicipal",
+      "displayName": "3. Auditoria e Consolidação Municipal",
+      "filters": "[]",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "x": 16,
+          "y": 12,
+          "z": 0,
+          "width": 820,
+          "height": 66,
+          "config": "{\"name\": \"p3_header\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 12, \"z\": 0, \"width\": 820, \"height\": 66, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"SaúdeData SP — Auditoria de Cadastros (CNES & UBS) e Consolidação Municipal\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"16pt\", \"color\": \"#FFFFFF\"}}]}, {\"textRuns\": [{\"value\": \"Verificação de integridade: 154.927 registros CNES e 5.844 registros UBS | Tabela completa dos 645 municípios\", \"textStyle\": {\"fontSize\": \"9.5pt\", \"color\": \"#CBD5E1\"}}]}]}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 0
+        },
+        {
+          "x": 848,
+          "y": 12,
+          "z": 1,
+          "width": 200,
+          "height": 66,
+          "config": "{\"name\": \"p3_slicer_reg\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 848, \"y\": 12, \"z\": 1, \"width\": 200, \"height\": 66, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimMunicipio.Regiao_Comparativa\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"DimMunicipio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Regiao_Comparativa\"}, \"Name\": \"DimMunicipio.Regiao_Comparativa\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Recorte Territorial'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 1
+        },
+        {
+          "x": 1058,
+          "y": 12,
+          "z": 2,
+          "width": 206,
+          "height": 66,
+          "config": "{\"name\": \"p3_slicer_mun\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1058, \"y\": 12, \"z\": 2, \"width\": 206, \"height\": 66, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"DimMunicipio.Municipio\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"DimMunicipio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Município'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 2
+        },
+        {
+          "x": 16,
+          "y": 90,
+          "z": 3,
+          "width": 240,
+          "height": 92,
+          "config": "{\"name\": \"p3_card_1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 90, \"z\": 3, \"width\": 240, \"height\": 92, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Estabelecimentos Cadastrados\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos Cadastrados\"}, \"Name\": \"_Medidas.Estabelecimentos Cadastrados\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'CNES Cadastrados'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 3
+        },
+        {
+          "x": 268,
+          "y": 90,
+          "z": 4,
+          "width": 240,
+          "height": 92,
+          "config": "{\"name\": \"p3_card_2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 268, \"y\": 90, \"z\": 4, \"width\": 240, \"height\": 92, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Estabelecimentos Desativados\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estabelecimentos Desativados\"}, \"Name\": \"_Medidas.Estabelecimentos Desativados\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'CNES Desativados'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 4
+        },
+        {
+          "x": 520,
+          "y": 90,
+          "z": 5,
+          "width": 240,
+          "height": 92,
+          "config": "{\"name\": \"p3_card_3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 520, \"y\": 90, \"z\": 5, \"width\": 240, \"height\": 92, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.UBS na Fonte\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"UBS na Fonte\"}, \"Name\": \"_Medidas.UBS na Fonte\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'UBS na Lista Oficial'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 5
+        },
+        {
+          "x": 772,
+          "y": 90,
+          "z": 6,
+          "width": 240,
+          "height": 92,
+          "config": "{\"name\": \"p3_card_4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 772, \"y\": 90, \"z\": 6, \"width\": 240, \"height\": 92, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.UBS não Correspondentes ao CNES Ativo\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"UBS não Correspondentes ao CNES Ativo\"}, \"Name\": \"_Medidas.UBS não Correspondentes ao CNES Ativo\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'UBS Divergentes (CNES Desat.)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 6
+        },
+        {
+          "x": 1024,
+          "y": 90,
+          "z": 7,
+          "width": 240,
+          "height": 92,
+          "config": "{\"name\": \"p3_card_5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1024, \"y\": 90, \"z\": 7, \"width\": 240, \"height\": 92, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Municípios sem Registro de Leitos\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Municípios sem Registro de Leitos\"}, \"Name\": \"_Medidas.Municípios sem Registro de Leitos\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Municípios sem Leitos (202609)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0F2942'\"}}}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'center'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 7
+        },
+        {
+          "x": 16,
+          "y": 194,
+          "z": 8,
+          "width": 1248,
+          "height": 510,
+          "config": "{\"name\": \"p3_table_cons\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16, \"y\": 194, \"z\": 8, \"width\": 1248, \"height\": 510, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"DimMunicipio.IBGE6\"}, {\"queryRef\": \"DimMunicipio.Municipio\"}, {\"queryRef\": \"_Medidas.Estabelecimentos Cadastrados\"}, {\"queryRef\": \"_Medidas.Estabelecimentos Ativos\"}, {\"queryRef\": \"_Medidas.Estabelecimentos Desativados\"}, {\"queryRef\": \"_Medidas.UBS na Fonte\"}, {\"queryRef\": \"_Medidas.UBS com CNES Ativo\"}, {\"queryRef\": \"_Medidas.UBS não Correspondentes ao CNES Ativo\"}, {\"queryRef\": \"_Medidas.Estabelecimentos com Registro de Leitos\"}, {\"queryRef\": \"_Medidas.Leitos Existentes\"}, {\"queryRef\": \"_Medidas.Leitos SUS\"}, {\"queryRef\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"e0\", \"Entity\": \"DimMunicipio\", \"Type\": 0}, {\"Name\": \"e1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e0\"}}, \"Property\": \"IBGE6\"}, \"Name\": \"DimMunicipio.IBGE6\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e0\"}}, \"Property\": \"Municipio\"}, \"Name\": \"DimMunicipio.Municipio\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Estabelecimentos Cadastrados\"}, \"Name\": \"_Medidas.Estabelecimentos Cadastrados\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Estabelecimentos Ativos\"}, \"Name\": \"_Medidas.Estabelecimentos Ativos\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Estabelecimentos Desativados\"}, \"Name\": \"_Medidas.Estabelecimentos Desativados\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"UBS na Fonte\"}, \"Name\": \"_Medidas.UBS na Fonte\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"UBS com CNES Ativo\"}, \"Name\": \"_Medidas.UBS com CNES Ativo\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"UBS não Correspondentes ao CNES Ativo\"}, \"Name\": \"_Medidas.UBS não Correspondentes ao CNES Ativo\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Estabelecimentos com Registro de Leitos\"}, \"Name\": \"_Medidas.Estabelecimentos com Registro de Leitos\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Leitos Existentes\"}, \"Name\": \"_Medidas.Leitos Existentes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Leitos SUS\"}, \"Name\": \"_Medidas.Leitos SUS\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"e1\"}}, \"Property\": \"Proporção de Leitos SUS\"}, \"Name\": \"_Medidas.Proporção de Leitos SUS\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tabela Consolidada dos 645 Municípios Paulistas (CNES, UBS e Leitos)'\"}}}}}], \"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DCE3EC'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "tabOrder": 8
+        }
+      ],
+      "config": "{\"relationships\":[]}",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "config": "{\"version\": \"5.59\", \"themeCollection\": {\"baseTheme\": {\"name\": \"CY24SU06\", \"version\": \"5.59\", \"type\": 2}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"settings\": {\"useNewFilterPaneExperience\": true, \"allowChangeFilterTypes\": true, \"useStylableVisualContainerHeader\": true, \"queryLimitOption\": 6, \"exportDataMode\": 1, \"useDefaultAggregateDisplayName\": true}}",
+  "layoutOptimization": 0
+}
